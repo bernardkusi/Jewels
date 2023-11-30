@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import { FaUser,FaShoppingCart } from 'react-icons/fa'
+import { FaUser,FaShoppingCart,FaSearch } from 'react-icons/fa'
 
 const Header = () => {
   return (
@@ -20,6 +20,11 @@ const Header = () => {
         </div>
       <nav>
         <Link href="/" className="logo">Jewels</Link>
+
+        <div className="search">
+          <span><FaSearch /></span>
+          <input type="text" placeholder="search" />
+        </div>
 
         <ul>
             <a href="#"><FaUser/></a>
