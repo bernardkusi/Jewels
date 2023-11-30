@@ -1,95 +1,67 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Link from "next/link";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Product from "./components/Product";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
+    <>
+      <div id="hero">
+        <Image alt="Hero image" objectFit="cover" fill src={"/bacd1.jpg"} />
         <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+          <h1>Lorem ipsum dolor sit.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tempora illum repellat!</p>
+          <a href="#" className="click">View Store</a>
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div id="products">
+        <div className="page">
+          <h4 className="heading">Our Popular Products</h4>
+          <p className="subheading">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <div className="productgrid">
+            <Product image="necklace1" />
+            <Product image="necklace2" />
+            <Product image="necklace3" />
+            <Product image="necklace4" />
+            <Product image="necklace5" />
+            <Product image="necklace6" />
+            <Product image="necklace7" />
+            <Product image="necklace8" />
+          </div>
+        </div>
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+      <div id="about">
+        <Image alt="Hero image" objectFit="cover" fill src={"/bacd4.jpg"} />
+        <div className="page">
+          <h4 className="heading" style={{ textAlign: "center", paddingBottom: "1.5rem" }}>About Us</h4>
+          <p className="abouttext">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error consequatur eum porro, corporis pariatur repudiandae quos laboriosam labore eaque commodi amet excepturi, nam voluptatum deserunt quam odio fugit dolorum voluptatibus. Tenetur facilis iste sequi voluptas et libero. Assumenda, distinctio laboriosam? Esse repellendus maxime id quo.
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            <br />
+            <Link href={'/about'} className="click">Learn More</Link>
           </p>
-        </a>
+        </div>
       </div>
-    </main>
+
+      <div id="products">
+        <div className="page">
+          <h4 className="heading">Our Popular Products</h4>
+          <p className="subheading">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <div className="productgrid">
+            <Product image="necklace1" />
+            <Product image="necklace2" />
+            <Product image="necklace3" />
+            <Product image="necklace4" />
+            <Product image="necklace5" />
+            <Product image="necklace6" />
+            <Product image="necklace7" />
+            <Product image="necklace8" />
+          </div>
+        </div>
+      </div>
+    </>
   )
 }

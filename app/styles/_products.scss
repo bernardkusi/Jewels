@@ -1,0 +1,34 @@
+#products{
+    .productgrid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 2rem 1rem;
+
+        .product{
+            .image{
+                background: lightgrey;
+                height: 10rem;
+                position: relative;
+            }
+
+            .details{
+                padding: .5rem 0;
+                .name{
+                    color: $secondary;
+                    font-size: .9rem;
+                }
+
+                .price{
+                    font-size: .85rem;
+                    color: grey;
+                    padding: .4rem 0;
+                }
+
+                .click{
+                    transform: scale(.85);
+                    transform-origin: 0;
+                }
+            }
+        }
+    }
+}
