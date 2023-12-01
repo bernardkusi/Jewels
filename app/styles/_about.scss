@@ -1,0 +1,14 @@
+.section{
+    padding: 2rem 1rem;
+
+    .aboutheading{
+        font-size: 1.3rem;
+        color: $secondary;
+        font-weight: 600;
+    }
+
+    .content{
+        color: $text;
+        padding-top: .3rem;
+    }
+}

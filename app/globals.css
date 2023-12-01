@@ -26,6 +26,17 @@ header > div ul {
   display: flex;
   gap: 1.5rem;
 }
+header > div ul:last-child {
+  gap: 0.5rem;
+  align-items: center;
+}
+header > div ul:last-child svg {
+  font-size: 0.9rem;
+}
+header > div ul:last-child span {
+  color: grey;
+  font-size: 0.9rem;
+}
 header > div ul a {
   text-decoration: none;
   color: grey;
@@ -132,6 +143,156 @@ header nav ul a svg {
   margin-top: 1.5rem;
 }
 
+#reviews {
+  position: relative;
+  padding: 3rem 0;
+}
+#reviews img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: brightness(40%);
+}
+#reviews .reviewflex {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+#reviews .reviewflex .review {
+  background: #fff;
+  border-radius: 0.6rem;
+  width: 300px;
+  padding: 1rem;
+}
+#reviews .reviewflex .review p.name {
+  color: rgb(231, 175, 33);
+  font-weight: 600;
+  padding: 0.4rem 0;
+}
+#reviews .reviewflex .review p.comment {
+  color: grey;
+  font-size: 0.9rem;
+}
+#reviews .reviewflex .review p.rating {
+  color: rgb(231, 175, 33);
+  padding: 0.4rem 0;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.section {
+  padding: 2rem 1rem;
+}
+.section .aboutheading {
+  font-size: 1.3rem;
+  color: rgb(231, 175, 33);
+  font-weight: 600;
+}
+.section .content {
+  color: rgb(71, 71, 71);
+  padding-top: 0.3rem;
+}
+
+.serviceflex .service {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  position: relative;
+  padding: 2rem 0 4rem;
+  align-items: center;
+}
+.serviceflex .service:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.serviceflex .service .image {
+  width: 50%;
+  height: 300px;
+  background: lightgrey;
+}
+.serviceflex .service .text {
+  max-width: 50%;
+}
+.serviceflex .service .text .servicename {
+  color: rgb(231, 175, 33);
+  font-size: 1.1;
+  font-weight: 600;
+}
+.serviceflex .service .text .content {
+  color: rgb(71, 71, 71);
+  font-size: 0.9rem;
+}
+
+.contactflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+}
+.contactflex > div {
+  width: 45%;
+}
+.contactflex > div.map {
+  height: 300px;
+  background: lightgrey;
+  border: 5px solid rgb(231, 175, 33);
+}
+.contactflex > div.form {
+  padding: 1.5rem;
+}
+.contactflex > div.form .label {
+  text-align: center;
+  font-size: 1.3rem;
+  color: rgb(231, 175, 33);
+  font-weight: 700;
+  padding: 0.6rem 0;
+}
+.contactflex > div.form .click {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.contactflex > div.form .control {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.4rem;
+  padding-bottom: 1rem;
+}
+.contactflex > div.form .control input {
+  width: 100%;
+  padding: 0.4rem;
+  outline: none;
+  border: 1px solid lightgrey;
+}
+.contactflex > div.form .control label {
+  font-size: 0.9rem;
+  color: rgb(71, 71, 71);
+}
+
+.contact {
+  padding: 1rem 1.5rem 4rem;
+  border-bottom: 1px solid grey;
+}
+.contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.contact ul li {
+  list-style-type: none;
+  color: grey;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: flex;
+  gap: 0.4rem;
+}
+.contact ul li svg {
+  font-size: 1rem;
+}
+
 .click {
   text-decoration: none;
   color: #fff;
@@ -175,7 +336,6 @@ header nav ul a svg {
 
 main {
   min-height: 100vh;
-  padding-bottom: 4rem;
 }
 main .page {
   max-width: 1100px;
@@ -214,7 +374,7 @@ footer div {
 footer div p {
   max-width: 450px;
   font-size: 0.8rem;
-  color: #fff;
+  color: #ffffff;
   line-height: 200%;
 }
 footer div p .logo {

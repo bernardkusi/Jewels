@@ -1,0 +1,77 @@
+.contactflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+
+    &>div{
+        width: 45%;
+
+        &.map{
+            height: 300px;
+            background: lightgrey;
+            border: 5px solid $secondary;
+        }
+
+        &.form{
+            padding: 1.5rem;
+
+            .label{
+                text-align: center;
+                font-size: 1.3rem;
+                color: $secondary;
+                font-weight: 700;
+                padding: .6rem 0;
+            }
+
+            .click{
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .control{
+                display: flex;
+                flex-direction: column-reverse;
+                gap: .4rem;
+                padding-bottom: 1rem;
+
+                input{
+                    width: 100%;
+                    padding: .4rem;
+                    outline: none;
+                    border: 1px solid lightgrey;
+                }
+
+                label{
+                    font-size: .9rem;
+                    color: $text;
+                }
+            }
+        }
+    }
+}
+
+.contact{
+    padding: 1rem 1.5rem 4rem;
+    border-bottom: 1px solid grey;
+    
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: .7rem;
+
+        li{
+            list-style-type: none;
+            color: grey;
+            font-size: .9rem;
+            text-decoration: none;
+            display: flex;
+            gap: .4rem;
+
+            svg{
+                font-size: 1rem;
+            }
+        }
+    }
+}

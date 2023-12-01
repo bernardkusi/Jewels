@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import { FaUser,FaShoppingCart,FaSearch } from 'react-icons/fa'
+import { FaUser,FaShoppingCart,FaSearch, FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa'
 
 const Header = () => {
   return (
@@ -14,8 +14,10 @@ const Header = () => {
             </ul>
 
             <ul>
-                <a href="tel:">0592724408</a>
-                <a href="tel:">0592724408</a>
+                <a href="tel:"><FaFacebook/></a>
+                <a href="tel:"><FaInstagram/></a>
+                <a href="tel:"><FaTiktok/></a>
+                <span>@Jewels</span>
             </ul>
         </div>
       <nav>
