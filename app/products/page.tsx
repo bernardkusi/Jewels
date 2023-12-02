@@ -21,7 +21,7 @@ const page = () => {
                     <h4 className="heading">Our Popular Products</h4>
                     <p className="subheading">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                     <div className="productgrid">
-                    {products.map(product=>(<Product product={product} />))}
+                    {products.map(product=>(<Product key={product.id} product={product} />))}
                         {/* <Product image="necklace1" />
                         <Product image="necklace2" />
                         <Product image="necklace3" />

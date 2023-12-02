@@ -1,8 +1,11 @@
 import React from 'react'
+import Banner from '../components/Banner'
 
 const page = () => {
   return (
-    <div className='page'>
+  <>
+      <Banner maintext='Our Services'/>
+      <div className='page'>
       <div className="serviceflex">
        <div className="service">
        <div className="image"></div>
@@ -68,6 +71,7 @@ const page = () => {
 
       </div>
     </div>
+  </>
   )
 }
 

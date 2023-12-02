@@ -1,8 +1,11 @@
 import React from 'react'
 import { FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa'
+import Banner from '../components/Banner'
 
 const page = () => {
   return (
+   <>
+   <Banner maintext='Contact Us'/>
     <div>
       <div className="page">
         <div className="contact">
@@ -39,6 +42,7 @@ const page = () => {
         </div>
       </div>
     </div>
+   </>
   )
 }
 

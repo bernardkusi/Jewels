@@ -1,7 +1,10 @@
 import React from 'react'
+import Banner from '../components/Banner'
 
 const page = () => {
   return (
+  <>
+  <Banner maintext='About Us'/>
     <div className='page'>
       <div className="section">
         <h4 className="aboutheading">Lorem ipsum dolor sit.</h4>
@@ -50,6 +53,7 @@ const page = () => {
 
 
     </div>
+  </>
   )
 }
 
