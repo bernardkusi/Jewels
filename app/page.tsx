@@ -25,7 +25,7 @@ export default function Home() {
         <div>
           <h1>Lorem ipsum dolor sit.</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tempora illum repellat!</p>
-          <a href="#" className="click">View Store</a>
+          <Link href="/products" className="click">View Store</Link>
         </div>
       </div>
 

@@ -30,7 +30,7 @@ const Header = () => {
 
         <ul>
             <a href="#"><FaUser/></a>
-            <a href="#"><FaShoppingCart/></a>
+            <Link href="/cart"><FaShoppingCart/></Link>
         </ul>
 
         <ul>
